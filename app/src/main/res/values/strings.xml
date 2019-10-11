@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currencify</string>
+    <string name="hello_title">Hello</string>
+    <string name="login">Log in</string>
+    <string name="register">Register</string>
+    <string name="new_account">Create new account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="mail">E-mail</string>
+    <string name="create_account_button">Create account</string>
+    <string name="existing_account">Login to your account</string>
+    <string name="title_activity_currency_exchange">CurrencyExchangeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

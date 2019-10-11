@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currencify</string>
+    <string name="hello_title">Cześć</string>
+    <string name="login">Zaloguj się</string>
+    <string name="register">Zarejestruj się</string>
+    <string name="new_account">Utwórz nowe konto</string>
+    <string name="username">Nazwa użytkownika</string>
+    <string name="password">Hasło</string>
+    <string name="mail">E-mail</string>
+    <string name="create_account_button">Stwórz konto</string>
+    <string name="existing_account">Zaloguj się do swojego kotna</string>
+</resources>
