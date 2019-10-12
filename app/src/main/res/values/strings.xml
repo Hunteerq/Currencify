@@ -10,8 +10,7 @@
     <string name="mail">E-mail</string>
     <string name="create_account_button">Create account</string>
     <string name="existing_account">Login to your account</string>
-    <string name="title_activity_currency_exchange">CurrencyExchangeActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_currencies">Currencies</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_logout">Logout</string>
 </resources>

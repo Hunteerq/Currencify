@@ -27,4 +27,15 @@ class UserManagerRepository(context: Context) : DbProvider(context) {
         return "SELECT * FROM $TABLE_NAME;"
     }
 
+    fun userExists(userLogin: UserLogin): Cursor? {
+        val sqliteDb : SQLiteDatabase = this.readableDatabase
+        return sqliteDb.rawQuery(getIsUserAuthorizedQuery(userLogin), null)
+    }
+
+    private fun getIsUserAuthorizedQuery(userLogin: UserLogin) : String {
+        return "SELECT COUNT(*) FROM $TABLE_NAME " +
+                "WHERE $USERNAME LIKE '${userLogin.username}' AND " +
+                "$PASSWORD LIKE '${userLogin.password}';"
+    }
+
 }

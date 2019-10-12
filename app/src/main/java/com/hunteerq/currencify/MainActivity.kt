@@ -6,12 +6,10 @@ import android.os.Bundle
 import android.view.View
 import com.hunteerq.currencify.start.LoginActivity
 import com.hunteerq.currencify.start.RegisterActivity
-import com.hunteerq.currencify.db.sqlite.DbProvider
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        var dbProvider : DbProvider = DbProvider(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }

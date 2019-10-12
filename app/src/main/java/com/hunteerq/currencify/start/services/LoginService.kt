@@ -1,18 +1,18 @@
 package com.hunteerq.currencify.start.services
 
 import android.content.Context
-import android.database.Cursor
 import com.hunteerq.currencify.db.models.UserLogin
 import com.hunteerq.currencify.db.sqlite.UserManagerRepository
+import com.hunteerq.currencify.start.services.mappers.UserMapper
 
 class LoginService(context : Context) {
 
-    private var userRepository : UserManagerRepository = UserManagerRepository(context)
+    private val userMapper  = UserMapper()
+
+    private val userRepository = UserManagerRepository(context)
 
 
     fun userAuthorization(userLogin : UserLogin) : Boolean {
-        val usersCursor : Cursor? = userRepository.getAllUsers(userLogin)
-        usersCursor.
-
+        return userMapper.mapCursorToUserAmount(userRepository.userExists(userLogin)) > 0
     }
 }

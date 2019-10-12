@@ -10,4 +10,7 @@
     <string name="mail">E-mail</string>
     <string name="create_account_button">Stwórz konto</string>
     <string name="existing_account">Zaloguj się do swojego kotna</string>
+    <string name="title_currencies">Waluty</string>
+    <string name="title_settings">Ustawienia</string>
+    <string name="title_logout">Wyloguj</string>
 </resources>
