@@ -16,8 +16,6 @@ import kotlinx.android.synthetic.main.activity_currency_exchange.*
 
 class CurrencyExchangeActivity : AppCompatActivity() {
 
-    private lateinit var currencySpinner: Spinner
-
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         var selectedFragment : Fragment? = null
         when (item.itemId) {
