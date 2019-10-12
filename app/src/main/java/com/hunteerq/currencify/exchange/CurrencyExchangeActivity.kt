@@ -5,13 +5,18 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import com.hunteerq.currencify.MainActivity
 import com.hunteerq.currencify.R
+import com.hunteerq.currencify.exchange.client.CurrencyTypes
 import com.hunteerq.currencify.exchange.fragments.CurrencyFragment
 import com.hunteerq.currencify.exchange.fragments.SettingsFragment
 import kotlinx.android.synthetic.main.activity_currency_exchange.*
 
 class CurrencyExchangeActivity : AppCompatActivity() {
+
+    private lateinit var currencySpinner: Spinner
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         var selectedFragment : Fragment? = null
@@ -41,4 +46,5 @@ class CurrencyExchangeActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().replace(R.id.fragment_container,
             CurrencyFragment()).commit()
     }
+
 }

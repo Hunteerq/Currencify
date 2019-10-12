@@ -21,8 +21,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun onLogin(view : View) {
-        val user = UserLogin(loginUsernameInput.text.toString(),
-            loginPasswordInput.text.toString())
+        val user = UserLogin(loginUsernameInput.text.toString(), loginPasswordInput.text.toString())
         val nextView = if (loginService.userAuthorization(user)) Intent(this, CurrencyExchangeActivity::class.java)
             else Intent(this, MainActivity::class.java)
         startActivity(nextView)

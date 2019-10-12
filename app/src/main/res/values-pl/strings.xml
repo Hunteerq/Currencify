@@ -13,4 +13,6 @@
     <string name="title_currencies">Waluty</string>
     <string name="title_settings">Ustawienia</string>
     <string name="title_logout">Wyloguj</string>
+    <string name="settings_option">Domyślna waluta</string>
+    <string name="save_settings">Zapisz zmiany</string>
 </resources>
