@@ -30,7 +30,7 @@ class SettingsFragment : Fragment() {
 
     private fun getCurrenciesAdapter(): ArrayAdapter<String?> {
         val currencies = CurrencyTypes.values().map { curr -> curr.toString() }
-        return ArrayAdapter(context, android.R.layout.simple_dropdown_item_1line, currencies)
+        return ArrayAdapter(context!!, android.R.layout.simple_dropdown_item_1line, currencies)
     }
 
 
