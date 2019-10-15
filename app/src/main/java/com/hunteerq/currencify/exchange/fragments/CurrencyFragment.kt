@@ -1,7 +1,9 @@
 package com.hunteerq.currencify.exchange.fragments
 
 import android.content.Context
-import android.os.*
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
